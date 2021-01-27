@@ -1,5 +1,6 @@
 from sys import stdin
 
+
 # 에라토스테네스의 체
 def get_prime_arr(num):
     arr = [True] * num
@@ -11,6 +12,7 @@ def get_prime_arr(num):
                 arr[y] = False
 
     return [i for i in range(2, num) if arr[i] == True]
+
 
 # 소수 조합 판별기
 def get_gold(n, arr):
